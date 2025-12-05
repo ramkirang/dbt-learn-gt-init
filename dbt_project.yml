@@ -36,7 +36,7 @@ models:
   jaffle_shop:
     staging:
       +materialized: view
+      +tags: ['staging','nightly']
     marts:
       +materialized: table
-
-    
+      tags: 'marts'
